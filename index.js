@@ -144,3 +144,8 @@ Emitter.prototype.emit = function(){
 
   return this;
 };
+
+Emitter.prototype.emit = function(){
+  this.redis.quit();
+  return this;
+}
